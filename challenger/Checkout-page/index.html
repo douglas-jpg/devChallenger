@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/devchallenges.png" type="image/x-icon">
+
+    <script src="script.js" defer></script>
+
+    <title>Checkout page</title>
+
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main>
+        <form id="checkout">
+
+            <fieldset>
+                <legend>Contact information</legend>
+
+                <div class="inputs">
+                    <label for="email">E-mail</label>
+                    <img src="img/svg/email.svg" alt="email icon" class="icon">
+                    <input required type="email" name="email" id="email" placeholder="Enter your email...">
+                </div>
+
+                <div class="inputs">
+                    <label for="phone">Phone</label>
+                    <img src="img/svg/phone.svg" alt="phone icon" class="icon">
+                    <input required type="tel" name="phone" id="phone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Shopping address</legend>
+
+                <div class="inputs">
+                    <label for="name">Full name</label>
+                    <img src="img/svg/profile.svg" alt="name icon" class="icon">
+                    <input required type="text" name="name" id="name" placeholder="Your full name...">
+                </div>
+
+                <div class="inputs">
+                    <label for="address">Address</label>
+                    <img src="img/svg/home.svg" alt="home icon" class="icon">
+                    <input required type="text" name="address" id="address" placeholder="Your address...">
+                </div>
+
+                <div class="inputs">
+                    <label for="city">City</label>
+                    <img src="img/svg/city.svg" alt="city icon" class="icon">
+                    <input required type="text" name="city" id="city" placeholder="Your city">
+                </div>
+
+                <div id="info">
+                    <div class="inputs">
+                        <label for="country">Country</label>
+                        <img src="img/svg/earth.svg" alt="earth icon" class="icon">
+                        <select required id="country">
+                            <option value="" selected>Select</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="scotland">Scotland</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                    
+                    <div class="inputs">
+                        <label for="postal">Postal code</label>
+                        <img src="img/svg/postal.svg" alt="postal icon" class="icon">
+                        <input type="number" id="postal" placeholder="xxxxx-xxx">
+                    </div>
+                </div>
+
+                <input type="checkbox" name="save" id="save"><span>Save this information for next time</span>
+            </fieldset>
+        </form>
+
+        <section class="shoping">
+            <div class="item">
+                <img src="img/photo1.png" alt="Vintage backbag">
+                <div class="info">
+                    <p class="name">Vintage backbag</p>
+                    <p class="current-price">$54.99</p>
+                    <p class="price">$94.99</p>
+                    <div class="number">
+                        <button class="less">-</button>
+                        <span id="n-backpack">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/photo2.png" alt="Levi Shoes">
+                <div class="info">
+                    <p class="name">Levi Shoes</p>
+                    <p class="current-price">$74.99</p>
+                    <p class="price">$124.99</p>
+                    <div class="number">
+                        <button class="less">-</button>
+                        <span id="n-backpack">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="money">
+                <p>shopping</p>
+                <p>$19</p>
+            </div>
+            <div class="total">
+                <p>total</p>
+                <p id="total-price">$148.98</p>
+            </div>
+        </section>
+    </main>
+    <button type="submit" form="checkout">Continue</button>
+    
+    <footer>
+        <p>created by douglas jpg - devChallenges.io</p>
+    </footer>
+</body>
+</html>

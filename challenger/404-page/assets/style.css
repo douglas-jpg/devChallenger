@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --gray1: #333333;
+    --gray2: #4f4f4f;
+    --gray3: #BDBDBD;
+    --white: #ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Space Mono', monospace;
+    color: var(--gray1);
+}
+
+header{
+    padding: 20px 0 0 24px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50Vh;
+}
+
+img{
+    height: 238px;
+    width: 286.83px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70Vh;
+}
+
+#title{
+    margin: 15px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71.09px;
+}
+
+#message{
+    margin: 15px;
+    color: var(--gray2);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.66px;
+}
+
+button{
+    cursor: pointer;
+    height: 68px;
+    width: 216px;
+    margin: 15px;
+    border: none;
+    background-color: var(--gray1);
+    font-family: 'Space Mono', monospace;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray3);
+}
+
+@media (min-width: 768px) {
+
+    main{
+        display: flex;
+    }
+
+    #image{
+        height: calc(100vh - 65px);
+        width: 50vw;
+    }
+
+    img{
+        height: 447px;
+        width: 540px;
+    }
+
+    #text{
+        height: auto;
+        width: 50vw;
+    }
+    
+    #title{
+        font-size: 64px;
+        line-height: 94.78px;
+    }
+
+    #message{
+        height: 108px;
+        width: 381px;
+        font-size: 24px;
+        line-height: 35.54px;
+        letter-spacing: -1px;
+    }
+
+    footer{
+        margin-top: auto;
+    }
+}
